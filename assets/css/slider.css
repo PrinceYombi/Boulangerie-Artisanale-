@@ -1,0 +1,105 @@
+
+/***********************************SLIDERS***************************************/
+[class*="bg-img"]{
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+}
+
+.bg-img1{
+    background-image: url("../images/slider/90706965_977626142633177_4933993648653074432_n-2-2-1440x932.jpg");
+}
+.bg-img2{
+    background-image: url("../images/slider/decoration-boulangerie.jpg");
+}
+.bg-img3{
+    background-image: url("../images/slider/IMG_6006-v2.jpg");
+}
+.bg-img4{
+    background-image: url("../images/slider/istockphoto-157610681-612x612.jpg");
+}
+.bg-img5{
+    background-image: url("../images/slider/mini-viennoiserie.jpg");
+}
+.bg-img6{
+    background-image: url("../images/slider/vitrine-boulangerie.jpg");
+}
+
+.slider{
+    width: 100%;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+
+}
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: slide 30s linear infinite;
+    z-index: -1;
+}
+
+.slide:nth-child(2){
+    animation-delay: 5s;
+}
+.slide:nth-child(3){
+    animation-delay: 10s;
+}
+.slide:nth-child(4){
+    animation-delay: 15s;
+}
+.slide:nth-child(5){
+    animation-delay: 20s;
+}
+.slide:nth-child(6){
+    animation-delay: 25s;
+}
+
+@keyframes slide{
+
+    0%, 20%, 100%{
+        opacity: 0;
+    }
+    5%, 15%{
+        opacity: 1;
+    }
+}
+
+
+.boulangerie-history{
+    font-family: 'Segoe Script','Savoye LET',    Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    overflow-y: hidden;
+    font-weight: bold;
+    color: var(--text--color);
+    border: 0.1px solid transparent;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    opacity: .7;
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: 2s pulse infinite;
+}
+
+.animate__animated.animate__flipInX {
+    --animate-duration: 2s;
+  }
+
+
+.boulangerie-history:hover{
+    animation: 2s bounce;
+}
+
+.boulangerie-history span{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
